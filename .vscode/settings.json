@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "i2c_module.h": "c",
+        "stdio.h": "c"
+    }
+}
