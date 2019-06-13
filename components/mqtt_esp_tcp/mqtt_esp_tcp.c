@@ -4,6 +4,9 @@ static const char *TAG = "MQTT_ESP_TCP";
 char MqttPubTopic[24] ={0};
 char MqttSubTopic[24] ={0};
 
+EventGroupHandle_t mqtt_event_group;
+EventGroupHandle_t wifi_event_group;
+
 static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event)
 {
     esp_mqtt_client_handle_t client = event->client;
@@ -11,7 +14,7 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event)
     switch (event->event_id) {
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-
+            xEventGroupSetBits(mqtt_event_group, MQTT_CONNECTED_BIT);
             // msg_id = esp_mqtt_client_publish(client, "/topic/qos1", "data_3", 0, 1, 0);
             // ESP_LOGI(TAG, "sent publish successful, msg_id=%d", msg_id);
 
@@ -56,7 +59,8 @@ void mqtt_sensor_task(void * parm)
     ESP_LOGI(TAG, "[APP] Startup..");
     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
     ESP_LOGI(TAG, "[APP] IDF version: %s", esp_get_idf_version());
-
+    
+    mqtt_event_group = xEventGroupCreate();
     //获取mac地址（station模式）
     uint8_t mac[6];
     esp_read_mac(mac, ESP_MAC_WIFI_STA);
@@ -66,6 +70,8 @@ void mqtt_sensor_task(void * parm)
     // 配置 mqtt 参数
     esp_mqtt_client_config_t mqtt_cfg = {
         .uri = "mqtt://120.77.245.155:62000",
+        .username = "ceshi",
+        .password = "123456",
         .event_handle = mqtt_event_handler,
     };
 
@@ -76,10 +82,11 @@ void mqtt_sensor_task(void * parm)
     // 配置mqtt参数，并启动MQTT服务
     esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
     esp_mqtt_client_start(client);
-
-    msg_id = esp_mqtt_client_subscribe(client,MqttSubTopic, 1);
-    ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
     
+    xEventGroupWaitBits(mqtt_event_group, MQTT_CONNECTED_BIT, false, true, portMAX_DELAY);
+    msg_id = esp_mqtt_client_subscribe(client, MqttSubTopic, 1);
+    ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
+
     while(1)
     {
 

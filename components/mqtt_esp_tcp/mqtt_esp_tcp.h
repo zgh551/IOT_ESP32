@@ -9,13 +9,12 @@
 #include "esp_system.h"
 #include "nvs_flash.h"
 #include "esp_event.h"
-// #include "tcpip_adapter.h"
-// #include "protocol_examples_common.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/semphr.h"
 #include "freertos/queue.h"
+#include "freertos/event_groups.h"
 
 #include "lwip/sockets.h"
 #include "lwip/dns.h"
@@ -31,5 +30,6 @@
 #include "driver/gpio.h"
 #include "json_packet.h"
 
+static const int MQTT_CONNECTED_BIT = BIT0;
 void mqtt_esp_tcp_init(void);
 #endif
