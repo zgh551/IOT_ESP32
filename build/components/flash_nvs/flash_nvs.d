@@ -1,6 +1,6 @@
 flash_nvs/flash_nvs.o: \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/flash_nvs/flash_nvs.c \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/flash_nvs/flash_nvs.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/flash_nvs/flash_nvs.c \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/flash_nvs/flash_nvs.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/_ansi.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/newlib.h \
@@ -26,7 +26,7 @@ flash_nvs/flash_nvs.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_common/include/esp_err.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdlib.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/machine/stdlib.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/alloca.h \
@@ -41,7 +41,7 @@ flash_nvs/flash_nvs.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_partition.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_spi_flash.h
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/flash_nvs/flash_nvs.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/flash_nvs/flash_nvs.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h:
 
@@ -93,7 +93,7 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdlib.h:
 
@@ -120,4 +120,4 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_partition.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_spi_flash.h:
-/home/zgh551/esp32/hello_world/components/flash_nvs/flash_nvs.c:
+/home/zgh551/esp32/IOT_ESP32/components/flash_nvs/flash_nvs.c:

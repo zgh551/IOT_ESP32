@@ -1,6 +1,6 @@
 i2c_module/src/i2c_module.o: \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/i2c_module/src/i2c_module.c \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/i2c_module/inc/i2c_module.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/i2c_module/src/i2c_module.c \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/i2c_module/inc/i2c_module.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/_ansi.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/newlib.h \
@@ -22,7 +22,7 @@ i2c_module/src/i2c_module.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/log/include/esp_log.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdint.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdlib.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/machine/stdlib.h \
@@ -81,7 +81,7 @@ i2c_module/src/i2c_module.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/i2c_module/inc/i2c_module.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/i2c_module/inc/i2c_module.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h:
 
@@ -125,7 +125,7 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/sys/_intsup.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
@@ -240,4 +240,4 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
-/home/zgh551/esp32/hello_world/components/i2c_module/src/i2c_module.c:
+/home/zgh551/esp32/IOT_ESP32/components/i2c_module/src/i2c_module.c:

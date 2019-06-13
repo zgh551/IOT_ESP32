@@ -2,11 +2,20 @@
 
 static const char *TAG = "json packet";
 
-void SensorPushPacket(char * s)
+//{mid:10000,t:"up",obj:{hu:1,tvc:2,t:3,co2:4}}
+void SensorPushPacket(uint32_t id,float t,float h,float tvoc,float co2,char * s)
 {
     cJSON *p_root = cJSON_CreateObject();
+    cJSON_AddNumberToObject(p_root,"mid",id);
     cJSON_AddStringToObject(p_root,"t","up");
-    cJSON_AddObjectToObject(p_root,"obj");
+
+    cJSON *sensor_data_s = cJSON_CreateObject();
+    cJSON_AddNumberToObject(sensor_data_s,"hu",h);
+    cJSON_AddNumberToObject(sensor_data_s,"tvc",tvoc);
+    cJSON_AddNumberToObject(sensor_data_s,"t",t);
+    cJSON_AddNumberToObject(sensor_data_s,"co2",co2);
+    cJSON_AddItemToObject(p_root,"obj",sensor_data_s); 
+
     char *sd = cJSON_Print(p_root);
     sprintf(s,sd);
     cJSON_free((void *)sd);

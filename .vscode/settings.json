@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "i2c_module.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "mqtt_esp_tcp.h": "c"
     }
 }

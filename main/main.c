@@ -18,6 +18,7 @@
 #include "i2c_module.h"
 #include "ccs811.h"
 #include "hdc1080.h"
+#include "mqtt_esp_tcp.h"
 
 static const char *TAG = "main";
 
@@ -40,13 +41,15 @@ void app_main()
 
         flash_nvs_init();
 
-        int ret = i2c_master_init();
-        ESP_LOGI(TAG, "i2c init status :%d",ret);
+        // int ret = i2c_master_init();
+        // ESP_LOGI(TAG, "i2c init status :%d",ret);
 
     
-        // smartconfig_init();
-        ccs811_task_init();
-        hdc1080_task_init();
+        smartconfig_init();
+        // ccs811_task_init();
+        // hdc1080_task_init();
+
+        mqtt_esp_tcp_init();
 
     while(1)
     {

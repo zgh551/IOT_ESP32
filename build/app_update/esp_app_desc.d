@@ -1,7 +1,7 @@
 esp_app_desc.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/app_update/esp_app_desc.c \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdlib.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/machine/ieeefp.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/_ansi.h \
@@ -41,7 +41,7 @@ esp_app_desc.o: \
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdlib.h:
 

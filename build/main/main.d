@@ -1,5 +1,5 @@
 main.o: \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/main/main.c \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/main/main.c \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/_ansi.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/newlib.h \
@@ -22,7 +22,7 @@ main.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdint.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/xtensa/include/xtensa/hal.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -60,7 +60,7 @@ main.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/limits.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/list.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/flash_nvs/flash_nvs.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/flash_nvs/flash_nvs.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/string.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/sys/string.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/log/include/esp_log.h \
@@ -69,7 +69,7 @@ main.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/nvs_flash/include/nvs.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_partition.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/wifi/wifi.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/wifi/wifi.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/event_groups.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/timers.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/task.h \
@@ -124,9 +124,9 @@ main.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_event/include/esp_event_loop.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/smartconfig/smart_config.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/smartconfig/smart_config.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_wifi/include/esp_smartconfig.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/i2c_module/inc/i2c_module.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/i2c_module/inc/i2c_module.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/driver/include/driver/i2c.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_common/include/esp_types.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp32/include/esp_intr_alloc.h \
@@ -142,8 +142,19 @@ main.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/sensor/ccs811/inc/ccs811.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/sensor/hdc1080/inc/hdc1080.h
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/sensor/ccs811/inc/ccs811.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/sensor/hdc1080/inc/hdc1080.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/mqtt_esp_tcp/mqtt_esp_tcp.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/dns.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/mqtt/esp-mqtt/include/mqtt_config.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/json/cJSON/cJSON.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/json_packet/inc/json_packet.h
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h:
 
@@ -189,7 +200,7 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -265,7 +276,7 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/flash_nvs/flash_nvs.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/flash_nvs/flash_nvs.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/string.h:
 
@@ -283,7 +294,7 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/wifi/wifi.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/wifi/wifi.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/event_groups.h:
 
@@ -393,11 +404,11 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_event/include/esp_event_loop.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/smartconfig/smart_config.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/smartconfig/smart_config.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/i2c_module/inc/i2c_module.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/i2c_module/inc/i2c_module.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/driver/include/driver/i2c.h:
 
@@ -429,7 +440,29 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/sensor/ccs811/inc/ccs811.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/sensor/ccs811/inc/ccs811.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/sensor/hdc1080/inc/hdc1080.h:
-/home/zgh551/esp32/hello_world/main/./main.c:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/sensor/hdc1080/inc/hdc1080.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/mqtt_esp_tcp/mqtt_esp_tcp.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/err.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/dns.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/mqtt/esp-mqtt/include/mqtt_config.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/json/cJSON/cJSON.h:
+
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/json_packet/inc/json_packet.h:
+/home/zgh551/esp32/IOT_ESP32/main/./main.c:

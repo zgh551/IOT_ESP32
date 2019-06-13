@@ -1,6 +1,6 @@
 sensor/hdc1080/src/hdc1080.o: \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/sensor/hdc1080/src/hdc1080.c \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/sensor/hdc1080/inc/hdc1080.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/sensor/hdc1080/src/hdc1080.c \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/sensor/hdc1080/inc/hdc1080.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/_ansi.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/newlib.h \
@@ -28,7 +28,7 @@ sensor/hdc1080/src/hdc1080.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdint.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h \
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/xtensa/include/xtensa/hal.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -82,9 +82,9 @@ sensor/hdc1080/src/hdc1080.o: \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/i2c_module/inc/i2c_module.h
+ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/i2c_module/inc/i2c_module.h
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/sensor/hdc1080/inc/hdc1080.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/sensor/hdc1080/inc/hdc1080.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/newlib/include/stdio.h:
 
@@ -140,7 +140,7 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/build/include/sdkconfig.h:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/build/include/sdkconfig.h:
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -248,5 +248,5 @@ C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32
 
 C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
 
-C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/hello_world/components/i2c_module/inc/i2c_module.h:
-/home/zgh551/esp32/hello_world/components/sensor/hdc1080/src/hdc1080.c:
+C:/esp32_win32_msys2_environment_and_toolchain-20181001/msys32/home/zgh551/esp32/IOT_ESP32/components/i2c_module/inc/i2c_module.h:
+/home/zgh551/esp32/IOT_ESP32/components/sensor/hdc1080/src/hdc1080.c:

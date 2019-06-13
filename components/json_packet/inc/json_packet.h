@@ -15,7 +15,7 @@
 #include "cJSON.h"
 
 
-void SensorPushPacket(char * s);
+void SensorPushPacket(uint32_t id,float t,float h,float tvoc,float co2,char * s);
 void AckPushPacket(uint32_t id,uint32_t led_value,char * s);
 int8_t SwitchPacketParse(char * s,uint32_t *id,uint32_t *led_value);
 
