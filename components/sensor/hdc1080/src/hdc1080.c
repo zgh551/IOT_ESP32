@@ -1,10 +1,14 @@
 #include "hdc1080.h"
 
 static const char *TAG = "HDC1080";
+QueueHandle_t HDC1080_SensorQueue;
+HDC1080_SensorPacket m_HDC1080_SensorPacket;
 
 static void hdc1080_init(i2c_port_t i2c_num)
 {
     uint8_t i2c_buff[8];
+    HDC1080_SensorQueue = xQueueCreate(10,sizeof(hdc1080_SensorPacket));
+
     // vTaskDelay(100 / portTICK_RATE_MS);
     int ret = i2c_master_read_datas(i2c_num,HDC1080_SENSOR_ADDR,DEVICE_ID,i2c_buff,2); 
     ESP_LOGI(TAG, "Device ID:0x%x 0x%x %d",i2c_buff[0],i2c_buff[1],ret);
@@ -38,15 +42,18 @@ void hdc1080_task_init()
     while(1)
     {
         int ret = i2c_master_write_reg(I2C_MASTER_NUM,HDC1080_SENSOR_ADDR,TEMPERATURE);
-        // ESP_LOGI(TAG, "Write status:%d",ret);
         vTaskDelay(1000 / portTICK_RATE_MS);
-
-        ret = i2c_master_read_data_only(I2C_MASTER_NUM,HDC1080_SENSOR_ADDR,i2c_buff,4); 
-        ESP_LOGI(TAG, "TEMPERATURE:%f; HUMIDITY:%f",(uint16_t)((i2c_buff[0] << 8) | i2c_buff[1])*165.0/65535 - 40,(uint16_t)((i2c_buff[2] << 8) | i2c_buff[3])*100.0/65535);
-
-        // ret = i2c_master_read_datas(I2C_MASTER_NUM,HDC1080_SENSOR_ADDR,HUMIDITY,i2c_buff,2); 
-        // ESP_LOGI(TAG, "HUMIDITY:%f %d",(uint16_t)((i2c_buff[2] << 8) | i2c_buff[3])*100.0/65535,ret);
-
-        
+        ret = i2c_master_read_data_only(I2C_MASTER_NUM,HDC1080_SENSOR_ADDR,i2c_buff,4);
+        m_HDC1080_SensorPacket.Temperature = (uint16_t)((i2c_buff[0] << 8) | i2c_buff[1])*165.0/65535 - 40;
+        m_HDC1080_SensorPacket.Humidity    = (uint16_t)((i2c_buff[2] << 8) | i2c_buff[3])*100.0/65535;
+        if( xQueueSend(HDC1080_SensorQueue,(void *) &m_HDC1080_SensorPacket,(TickType_t)100) != pdPASS )
+        {
+            /* 发送失败，即使等待了10个时钟节拍 */
+        }
+        else
+        {
+            /* 发送成功 */                     
+        }
+        ESP_LOGI(TAG, "TEMPERATURE:%f; HUMIDITY:%f",m_HDC1080_SensorPacket.Temperature,m_HDC1080_SensorPacket.Humidity); 
     }
 }

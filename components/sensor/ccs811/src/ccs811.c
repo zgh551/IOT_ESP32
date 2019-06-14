@@ -1,10 +1,14 @@
 #include "ccs811.h"
 
 static const char *TAG = "CCS811";
+CCS811_SensorPacket m_CCS811_SensorPacket;
+QueueHandle_t CCS811_SensorQueue;
 
 static void ccs811_init(i2c_port_t i2c_num)
 {
     uint8_t i2c_buff[8];
+    CCS811_SensorQueue = xQueueCreate(10,sizeof(CCS811_SensorPacket));
+
     vTaskDelay(100 / portTICK_RATE_MS);
     ESP_ERROR_CHECK(i2c_master_read_datas(i2c_num,CCS811_SENSOR_ADDR,HW_ID,i2c_buff,1)); 
     ESP_LOGI(TAG, "Hardware ID:0x%x",i2c_buff[0]);
@@ -49,7 +53,17 @@ static void ccs811_task(void *arg)
         i2c_master_read_datas(I2C_MASTER_NUM,CCS811_SENSOR_ADDR,ALG_RESULT_DATA,i2c_buff,8);
         if(i2c_buff[4] & 0x08)
         {
-            ESP_LOGI(TAG, "CO2: %d ;TVOC: %d",(uint16_t)((i2c_buff[0] << 8) | i2c_buff[1]) , (uint16_t)( (i2c_buff[2] << 8) | i2c_buff[3]));
+            m_CCS811_SensorPacket.TVOC = (uint16_t)((i2c_buff[2] << 8) | i2c_buff[3])
+            m_CCS811_SensorPacket.CO2  = (uint16_t)((i2c_buff[0] << 8) | i2c_buff[1]);
+            if( xQueueSend(CCS811_SensorQueue,(void *) &m_CCS811_SensorPacket,(TickType_t)100) != pdPASS )
+            {
+                /* 发送失败，即使等待了10个时钟节拍 */
+            }
+            else
+            {
+                /* 发送成功 */                   
+            }
+            ESP_LOGI(TAG, "CO2: %d ;TVOC: %d",m_CCS811_SensorPacket.CO2 ,m_CCS811_SensorPacket.TVOC );
         }
         // ESP_LOGI(TAG, "Receive Data 0x%x 0x%x 0x%x 0x%x",i2c_buff[0],i2c_buff[1],i2c_buff[2],i2c_buff[3]);
         vTaskDelay(1000 / portTICK_RATE_MS);

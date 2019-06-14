@@ -30,6 +30,14 @@
 #define MANUFACTURER_ID 0xFE
 #define DEVICE_ID       0xFF
 
+typedef struct _HDC1080_SensorPacket
+{
+    float Temperature;
+    float Humidity;
+}HDC1080_SensorPacket;
+
+extern QueueHandle_t HDC1080_SensorQueue;
+
 void hdc1080_task_init();
 
 #endif

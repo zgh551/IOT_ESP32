@@ -29,6 +29,8 @@
 // #include "led.h"
 #include "driver/gpio.h"
 #include "json_packet.h"
+#include "ccs811.h"
+#include "hdc1080.h"
 
 static const int MQTT_CONNECTED_BIT = BIT0;
 void mqtt_esp_tcp_init(void);

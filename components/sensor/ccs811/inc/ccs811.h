@@ -16,7 +16,6 @@
 #include "driver/i2c.h"
 #include "i2c_module.h"
 
-
 #define CCS811_SENSOR_ADDR                  0x5A             /*!< slave address for CCS811 sensor */
 #define DRIVE_MODE_IDLE                     0x0
 #define DRIVE_MODE_1SEC                     0x10
@@ -46,6 +45,14 @@
 #define APP_VERIFY      0xF3
 #define APP_START       0xF4
 #define SW_RESET        0xFF
+
+typedef struct _CCS811_SensorPacket
+{
+    uint16_t TVOC;
+    uint16_t CO2;
+}CCS811_SensorPacket;
+
+extern QueueHandle_t CCS811_SensorQueue;
 
 void ccs811_task_init();
 

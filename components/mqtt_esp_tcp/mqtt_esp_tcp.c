@@ -7,6 +7,12 @@ char MqttSubTopic[24] ={0};
 EventGroupHandle_t mqtt_event_group;
 EventGroupHandle_t wifi_event_group;
 
+QueueHandle_t HDC1080_SensorQueue;
+QueueHandle_t CCS811_SensorQueue;
+
+CCS811_SensorPacket  mqtt_CCS811_SensorPacket;
+HDC1080_SensorPacket mqtt_HDC1080_SensorPacket;
+
 static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event)
 {
     esp_mqtt_client_handle_t client = event->client;
@@ -89,7 +95,22 @@ void mqtt_sensor_task(void * parm)
 
     while(1)
     {
+        xResult = xQueueReceive(CCS811_SensorQueue,                 /* 消息队列句柄 */
+                                (void *)&mqtt_CCS811_SensorPacket,  /* 存储接收到的数据到变量ucQueueMsgValue中 */
+                                (TickType_t)pdMS_TO_TICKS(3000));   /* 设置阻塞时间 */      
+        if(xResult == pdPASS)
+        {
+            /* 成功接收，并通过串口将数据打印出来 */
+        }
+        else
+        {
+            /* 超时 */
+        }
+        xResult = xQueueReceive(HDC1080_SensorQueue,                /* 消息队列句柄 */
+                                (void *)&mqtt_HDC1080_SensorPacket, /* 存储接收到的数据到变量ucQueueMsgValue中 */
+                                (TickType_t)pdMS_TO_TICKS(3000));   /* 设置阻塞时间 */
 
+        SensorPushPacket(uint32_t id,float t,float h,float tvoc,float co2,char * s);
     }
 }
 
